@@ -57,7 +57,7 @@ class AgendaContainer extends React.PureComponent {
             type="H1"
             customStyle={styles.title}
           >
-            Bienvenido a Daruma!
+            Agenda
           </ScreenTitle>
         </Content>
       </Container>

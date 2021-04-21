@@ -57,7 +57,7 @@ class ProfileContainer extends React.PureComponent {
             type="H1"
             customStyle={styles.title}
           >
-            Bienvenido a Daruma!
+            Perfil
           </ScreenTitle>
         </Content>
       </Container>

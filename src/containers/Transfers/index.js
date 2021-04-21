@@ -57,7 +57,7 @@ class TransfersContainer extends React.PureComponent {
             type="H1"
             customStyle={styles.title}
           >
-            Bienvenido a Daruma!
+            Transferencias
           </ScreenTitle>
         </Content>
       </Container>
