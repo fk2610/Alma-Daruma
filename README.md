@@ -6,7 +6,7 @@ To start project
 
 2- install dependencies using npm install
 
-3- then npm start (when is done, this will show a qr)
+3- then npm start (when it's done, this will show a qr)
 
 4- in your device (android or iOS) install ExpoGo
 
