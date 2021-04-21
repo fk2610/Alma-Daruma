@@ -27,9 +27,8 @@ const styles = StyleSheet.create({
   header: {
     height: platform.tenScale,
   },
-  remidersContainer: {
-    flex: 1,
-    justifyContent: 'space-around',
+  content: {
+    flex: 1, padding: platform.thirtyScale,
   },
 });
 
@@ -52,7 +51,7 @@ class AgendaContainer extends React.PureComponent {
     return (
       <Container>
         <Header transparent style={styles.header} />
-        <Content>
+        <Content contentContainerStyle={styles.content}>
           <ScreenTitle
             bold
             type="H1"
