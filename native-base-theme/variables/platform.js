@@ -196,8 +196,8 @@ export default {
   },
 
   // Footer
-  footerHeight: 55,
-  footerDefaultBg: platform === PLATFORM.IOS ? '#F8F8F8' : '#3F51B5',
+  footerHeight: platform.fiftyfiveScale,
+  footerDefaultBg: '#fff',
   footerPaddingBottom: 0,
 
   // FooterTab
@@ -210,7 +210,7 @@ export default {
 
   // Header
   toolbarBtnColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
-  toolbarDefaultBg: platform === PLATFORM.IOS ? '#F8F8F8' : '#3F51B5',
+  toolbarDefaultBg: '#fff',
   toolbarHeight: platform === PLATFORM.IOS ? 64 : 56,
   toolbarSearchIconSize: platform === PLATFORM.IOS ? 20 : 23,
   toolbarInputColor: platform === PLATFORM.IOS ? '#CECDD2' : '#fff',
@@ -373,6 +373,7 @@ export default {
   oneHundredFourtycale: moderateScale(140),
   oneHundredFourtyFiveScale: moderateScale(145),
   oneHundredFifty: moderateScale(150),
+  oneHundredFiftySeventyFive: moderateScale(175),
   twoHundredTwentyFive: moderateScale(200),
   threeHundredTwentyFive: moderateScale(300),
   threeHundredFifty: moderateScale(350),

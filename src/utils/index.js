@@ -52,3 +52,10 @@ export function showAlert(
     { cancelable: isCancelable },
   );
 }
+
+export const formatMoney = (amount, withCents = true) => {
+  const moneyValue = `$${(amount).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
+  return withCents
+    ? moneyValue
+    : moneyValue.substring(0, moneyValue.length - 3);
+};

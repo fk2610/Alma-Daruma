@@ -5,7 +5,7 @@ import {
   ON_APP_LOADING_FINISH,
 } from '../actions';
 
-// import reducers
+import cashFlowReducer from './cashFlow';
 
 const initialState = {
   loading: false,
@@ -27,6 +27,7 @@ const rootReducer = (state = initialState, action) => {
 
 const reducers = {
   rootReducer,
+  cashFlowReducer,
   // other reducers
 };
 

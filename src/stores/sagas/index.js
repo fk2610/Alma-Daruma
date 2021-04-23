@@ -5,6 +5,7 @@ import {
   takeLatest,
   select,
   put,
+  fork,
 } from 'redux-saga/effects';
 
 import {
@@ -12,7 +13,8 @@ import {
   ON_APP_LOADING_FINISH,
 } from '../actions';
 
-// import other sagas
+import cashFlowSagas from './cashFlow';
+
 export function* appReady() {
   const isReady = yield select(({ rootReducer }) => rootReducer.isAppReady);
   if (!isReady) {
@@ -25,6 +27,7 @@ export function* appReady() {
 export default function* rootSaga() {
   yield all([
     takeLatest(ON_APP_READY, appReady),
+    fork(cashFlowSagas),
     // fork(other sagas)
   ]);
 }

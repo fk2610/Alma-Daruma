@@ -4,7 +4,7 @@ import platform from '../../../native-base-theme/variables/platform';
 
 const styles = StyleSheet.create({
   footer: {
-    borderTopColor: platform.footerBorderColor,
+    borderTopColor: platform.footerDefaultBg,
     borderRightWidth: 0,
     borderLeftWidth: 0,
     borderWidth: 1,

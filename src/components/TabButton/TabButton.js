@@ -40,11 +40,13 @@ class TabButton extends React.PureComponent {
           disabled,
         }}
         onPress={disabled ? undefined : onPress}
+        transparent
         {...rest}
       >
         <Icon
           name={icon}
           type={iconType}
+          style={styles}
         />
       </Button>
     );

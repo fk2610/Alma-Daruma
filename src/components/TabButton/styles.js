@@ -6,14 +6,17 @@ const styles = StyleSheet.create({
     backgroundColor: platform.footerDefaultBg,
   },
   button: {
-    borderTopWidth: 0.2,
+    borderTopWidth: 0,
     borderTopColor: '#c3c3c3',
     paddingHorizontal: 0,
     borderRadius: 0,
+    borderRightColor: platform.brandPrimary,
+    borderRightWidth: 0.2,
+    height: platform.footerHeight,
   },
   activeButton: {
-    borderTopColor: platform.tabBarActiveTextColor,
-    borderTopWidth: 2,
+    borderTopColor: platform.brandPrimary,
+    borderTopWidth: 3,
     borderRadius: 0,
   },
 });
