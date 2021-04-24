@@ -3,10 +3,6 @@
     "name": "alma-app",
     "slug": "alma-app",
     "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "android"
-    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -15,7 +11,9 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 30000
     },
     "assetBundlePatterns": [
       "**/*"
@@ -25,7 +23,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.fixe.app",
+      "bundleIdentifier": "com.ferkjr.almaapp",
       "buildNumber": "1",
       "userInterfaceStyle": "automatic"
     },
@@ -34,7 +32,7 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.fixe.app",
+      "package": "com.ferkjr.almaapp",
       "versionCode": 1
     },
     "web": {
