@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import {
   Container,
-  Header,
   Content,
 } from 'native-base';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import ScreenTitle from '../../components/ScreenTitle';
+import ActionHeader from '../../components/ActionHeader';
 
 import platform from '../../../native-base-theme/variables/platform';
 
@@ -50,7 +50,9 @@ class TransfersContainer extends React.PureComponent {
   render() {
     return (
       <Container>
-        <Header transparent style={styles.header} />
+        <ActionHeader
+          showLogo
+        />
         <Content contentContainerStyle={styles.content}>
           <ScreenTitle
             bold
