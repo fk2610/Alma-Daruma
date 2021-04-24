@@ -1,0 +1,18 @@
+{
+    "builds": {
+        "android": {
+            "release": {
+                "workflow": "generic",
+                "extends": "android",
+                "buildType": "apk",
+                "releaseChannel": "east-test",
+                "distribution": "internal"
+            },
+            "ios": {
+                "release": {
+                    "workflow": "generic"
+                }
+            }
+        }
+    }
+}
