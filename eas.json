@@ -7,12 +7,12 @@
                 "buildType": "apk",
                 "releaseChannel": "east-test",
                 "distribution": "internal"
-            },
+            }
+        },
             "ios": {
                 "release": {
                     "workflow": "generic"
                 }
             }
-        }
     }
 }
